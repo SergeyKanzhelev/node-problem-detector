@@ -12,6 +12,8 @@ steps:
     args:
     - -c
     - |
+      echo "installing gcc"
+      apk add build-base
       echo "Building/Pushing NPD containers"
       make push-container
 substitutions:
