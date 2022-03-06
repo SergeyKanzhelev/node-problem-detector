@@ -15,7 +15,7 @@ steps:
       echo "installing gcc"
       apk add build-base
       echo "installing dependencies"
-      apt install libsystemd-dev gcc-aarch64-linux-gnu
+      apk add libsystemd-dev gcc-aarch64-linux-gnu
       echo "Building/Pushing NPD containers"
       make push-container
 substitutions:
