@@ -13,7 +13,9 @@ steps:
     - -c
     - |
       echo "installing go"
-      snap install go --classic
+      curl -OL https://golang.org/dl/go1.17.7.linux-amd64.tar.gz
+      tar -C /usr/local -xvf go1.17.7.linux-amd64.tar.gz
+      export PATH=$$PATH:/usr/local/go/bin
       go version
       echo "installing dependencies"
       apt install libsystemd-dev gcc-aarch64-linux-gnu
