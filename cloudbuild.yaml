@@ -12,9 +12,10 @@ steps:
     args:
     - -c
     - |
-      echo "installing curl"
+      echo "installing curl and docker"
       apt update
       apt -y install curl
+      apt -y install docker-ce docker-ce-cli containerd.io
       echo "installing go"
       curl -OL https://golang.org/dl/go1.17.7.linux-amd64.tar.gz
       tar -C /usr/local -xvf go1.17.7.linux-amd64.tar.gz
