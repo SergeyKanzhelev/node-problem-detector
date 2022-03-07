@@ -13,9 +13,7 @@ steps:
     - -c
     - |
       echo "installing go"
-      apt search golang-go
-      apt search gccgo-go
-      apt install gccgo-go
+      sudo snap install go --classic
       go version
       echo "installing dependencies"
       apt install libsystemd-dev gcc-aarch64-linux-gnu
