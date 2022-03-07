@@ -13,7 +13,7 @@ steps:
     - -c
     - |
       echo "installing go"
-      sudo snap install go --classic
+      snap install go --classic
       go version
       echo "installing dependencies"
       apt install libsystemd-dev gcc-aarch64-linux-gnu
