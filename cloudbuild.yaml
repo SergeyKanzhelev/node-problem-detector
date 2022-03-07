@@ -12,6 +12,8 @@ steps:
     args:
     - -c
     - |
+      echo "installing curl"
+      apt install curl
       echo "installing go"
       curl -OL https://golang.org/dl/go1.17.7.linux-amd64.tar.gz
       tar -C /usr/local -xvf go1.17.7.linux-amd64.tar.gz
